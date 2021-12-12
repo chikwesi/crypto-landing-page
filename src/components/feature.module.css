@@ -1,0 +1,21 @@
+.hero{
+    align-items: center;
+    padding: 50px 0px;
+    background-color: #ffff;
+  }
+
+  .borderDouble{
+      margin: 0;
+      padding-bottom: 3rem;
+      position: relative;
+      border-bottom: 1px solid #f5f5f5;
+   }
+
+  .borderDouble:before {
+      position: absolute;
+      background: #f95131;
+      height: 1px;
+      content: '';
+      width: 70px;
+      bottom: -2px;
+  }

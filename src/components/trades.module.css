@@ -1,0 +1,28 @@
+.bg {
+  background-color: black;
+  color: white;
+  padding: 4rem 0;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+.tradeCard {
+  background-color: #ffffff0d;
+  padding: 1.5rem;
+  border: 1px solid #383838;
+  height: 100%;
+}
+
+.trades >:first-child .tradeCard{
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.trades >:last-child .tradeCard{
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
