@@ -10,7 +10,7 @@ const container = {
     show: {
         transition: {
             when: "afterChildren",
-            staggerChildren: 0.35,
+            staggerChildren: .35,
         },
     },
 }

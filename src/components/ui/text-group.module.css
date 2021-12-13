@@ -1,7 +1,7 @@
 .line {
   display: inline-block;
   width: 50px;
-  height: 2px;
+  height: 1px;
   background: #f95131;
   vertical-align: middle;
 }

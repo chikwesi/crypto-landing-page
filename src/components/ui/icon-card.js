@@ -3,19 +3,16 @@ import { motion } from 'framer-motion';
 
 const container = {
     show: {
+        opacity: 1,
         transition: {
-            when: "afterChildren",
-            staggerChildren: 0.35,
+            when: "beforeChildren",
+            staggerChildren: 0.45,
         },
-    },
+    }
 }
 const item = {
     hidden: {
-        opacity: 0, y: -50,
-        transition: {
-            ease: "easeIn",
-            duration: 0.7,
-        },
+        opacity: 0, y: -30,
     },
     show: {
         opacity: 1,
@@ -27,13 +24,13 @@ const item = {
     },
 };
 
-const IconCard = ({ title, detail, imageSrc }) => {
+const IconCard = ({ title, detail, imageSrc}) => {
 
     return (
         <motion.div
             variants={container}
             initial='hidden'
-            animate='show'
+            whileInView='show'
             viewport={{ once: true }}
         >
             <motion.img variants={item} src={imageSrc} className={style.img} alt="icon" />
