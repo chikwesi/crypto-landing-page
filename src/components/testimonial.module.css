@@ -9,3 +9,8 @@
   object-fit: cover;
   border-radius: 0.3rem;
 }
+
+.underline{
+  border-bottom: 1px solid #f95131;
+  padding-bottom: 3px;
+}

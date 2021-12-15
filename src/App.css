@@ -5,6 +5,10 @@
   transition: 1s ease-in-out 1s;
 }
 
+.bg-black {
+  background-color: #000
+}
+
 .btn-primary:hover{
   position: relative;
   top: -10px;

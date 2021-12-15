@@ -8,11 +8,12 @@ import QuoteCard from './ui/quote-card';
 import TextGroup from './ui/text-group';
 
 const textData = {
-    shortTile: 'Testimony',
+    shortTitle: 'Testimony',
     title: <>Inspired by <br />
         Investors. Built<br />
         for the Future.</>,
-    detail: <>Rated 4.3 / 5 based on 96 reviews.<br /> Showing our favourite reviews</>
+    detail: <>Rated <span className="fw-bolder text-white">4.3 / 5</span > based on <span className={`fw-bolder text-white ${style.underline}`}>96 <span className="fw-normal">reviews</span>
+        </span>.<br /> Showing our favourite reviews</>
 }
 
 const Testimonial = () => {

@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 
 const TEXT_DATA = {
     title: "Start Earning* in 5 Simple steps",
-    detail: "*Not just saving"
+    subTitle: "*Not Just Saving"
 }
 
 const STEPS = [
