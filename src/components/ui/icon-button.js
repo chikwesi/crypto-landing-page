@@ -1,11 +1,17 @@
+import { Button } from 'react-bootstrap';
 import style from './icon-button.module.css'
 
-const IconButton = ({ icon, className, variant}) => {
+const IconButton = ({ children, className = '' }) => {
 
     return (
-        <button className={`${variant ? style.outline : style.primary} ${className}`}>
-           {icon}
-        </button>
+        <Button size="lg" className={className}>
+            {children}
+            <img
+                className="ms-2"
+                width="20px"
+                src='./right.png'
+                alt="button" />
+        </Button>
     )
 }
 

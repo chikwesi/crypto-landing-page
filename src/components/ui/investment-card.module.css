@@ -1,11 +1,11 @@
 .img {
   width: 80%;
+  border-radius: .5rem;
 }
 
 .transparentCard {
   z-index: 2;
   position: absolute;
-  top: 20px;
   right: 0;
   background: #cacaca80;
   padding: 1.5rem;

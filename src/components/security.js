@@ -1,13 +1,14 @@
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Frame from './layout/frame';
 import style from './security.module.css';
+import IconButton from './ui/icon-button';
 import InvestmentCard from './ui/investment-card';
 import TextGroup from './ui/text-group';
 
 const textData = {
     shortTitle: 'Safety Priority',
     title: <span>Our commitment<br /> to Your Security</span>,
-    detail: "Turney has extensive experience with Defi and blockchain technologies. This includes the security processes required to keep fund safe. We are serious about risk and have worked extensively to protect your investment"
+    detail: <>Turney has extensive experience with Defi and blockchain <br /> technologies. This includes the security processes required to <br />keep fund safe. We are serious about risk and have worked <br />extensively to protect your investment</>
 }
 
 const Security = () => {
@@ -18,11 +19,11 @@ const Security = () => {
                     <Col md={5}>
                         <InvestmentCard></InvestmentCard>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className="d-flex flex-column align-items-start">
                         <TextGroup
                             {...textData}
                         />
-                        <Button size="lg" className='mt-5'>Learn More</Button>
+                        <IconButton className="mt-auto">Learn More</IconButton>
                     </Col>
                 </Row>
             </Container>

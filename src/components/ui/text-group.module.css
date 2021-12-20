@@ -5,3 +5,9 @@
   background: #f95131;
   vertical-align: middle;
 }
+
+.title{
+  margin-top: 1.2rem;
+  font-weight: 500;
+  font-size: 3rem;
+}

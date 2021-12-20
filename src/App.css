@@ -1,6 +1,8 @@
 .btn-primary {
   background-color: #f95131 !important;
   border-color: #f95131 !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
   color: #ffffff;
   transition: 1s ease-in-out 1s;
 }

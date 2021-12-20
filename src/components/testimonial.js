@@ -2,7 +2,7 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import Frame from './layout/frame';
 import style from './testimonial.module.css';
-import IconButton from './ui/icon-button';
+import IconButton from './ui/icon-button-round';
 import PaddedOutline from './ui/padded-outline';
 import QuoteCard from './ui/quote-card';
 import TextGroup from './ui/text-group';
@@ -25,7 +25,7 @@ const Testimonial = () => {
                         <TextGroup
                             {...textData}
                         />
-                        <Button>Learn More</Button>
+                        <img src="./trustpilot.png" width="80px"alt="trustpilot"/>
                     </Col>
                     <Col>
                         <Row className="align-items-end gx-4">

@@ -1,0 +1,26 @@
+.primary,
+.outline {
+  background-color: transparent;
+  outline: none;
+  padding: 2px;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  text-align: center;
+  vertical-align: center;
+  border: 2px solid transparent;
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.primary {
+  color: white;
+  background-color: #f95131;
+  border-color: #f95131;
+}
+
+.outline {
+    color: white;
+    background-color: #161616;
+    border-color: #2e2e2e;
+  }

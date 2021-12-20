@@ -22,7 +22,6 @@ const features = [
         detail: 'Our yields are based on protocol activity, we hedge exposure to the underlying asset and market volatility'
     },
 ]
-
 const containerVariant = {
     show: {
         transition: {
@@ -43,7 +42,6 @@ const cardVariant = {
         },
     }
 };
-
 const subHeadingVariant = {
     hidden: {
         opacity: 0,
@@ -56,7 +54,6 @@ const subHeadingVariant = {
         },
     },
 };
-
 const headingVariant = {
     hidden: {
         opacity: 0,

@@ -7,9 +7,10 @@ import Frame from './layout/frame';
 import NumberedCard from './ui/numbered-card';
 import TextGroup from './ui/text-group';
 import { motion } from 'framer-motion';
+import IconButton from './ui/icon-button';
 
 const TEXT_DATA = {
-    title: "Start Earning* in 5 Simple steps",
+    title: <>Start Earning*<br/>in 5 Simple steps </>,
     subTitle: "*Not Just Saving"
 }
 
@@ -99,7 +100,7 @@ const GetStarted = () => {
                 viewport={{ once: true }}>
                 <Banner borderRadious='20px'>
                     <Row className="gx-2">
-                        <Col md={5}>
+                        <Col md={5} className="d-flex flex-column align-items-start pb-4">
                             <motion.div variants={textVariant}
                                 initial='hidden'
                                 whileInView='show'>
@@ -108,7 +109,7 @@ const GetStarted = () => {
                                     className="text-left"
                                 />
                             </motion.div >
-                            <Button size="lg">Get Started</Button>
+                            <IconButton className="mt-auto">Get Started</IconButton>
 
                         </Col>
                         <Col>
