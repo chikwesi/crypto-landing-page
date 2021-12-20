@@ -1,28 +1,21 @@
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-  .underline{
-      margin: 0;
-      padding-bottom: 1rem;
-      position: relative;
-      border-bottom: 1px solid #f95131;
-   }
+.underline {
+  margin: 0;
+  padding-bottom: 1rem;
+  position: relative;
+  border-bottom: 1px solid #f95131;
+}
+
 .partners {
-    display: flex;
-    grid-gap: 25px;
+  display: flex;
+  grid-gap: 25px;
+}
 
-}
 .partner {
-    height: 40px;
+  height: 40px;
 }
-  /* .borderDouble:before {
-      position: absolute;
-      background: #f95131;
-      height: 1px;
-      content: '';
-      width: 40px;
-      bottom: -2px;
-  } */

@@ -36,10 +36,6 @@ const cardVariant = {
     },
     show: {
         display: 'block',
-        transition: {
-            when: "beforeChildren",
-            duration: 2,
-        },
     }
 };
 const subHeadingVariant = {
@@ -73,7 +69,7 @@ const headingVariant = {
 const Feature = () => {
     return (
         <Frame>
-            <Container className={style.hero} >
+            <Container>
                 <Row>
                     <Col md={4}>
                         <motion.p variants={subHeadingVariant}

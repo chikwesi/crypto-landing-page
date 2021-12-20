@@ -1,11 +1,14 @@
 import style from './icon-button-round.module.css'
+import { motion } from 'framer-motion';
 
-const IconButtonRound = ({ icon, className, variant}) => {
+const IconButtonRound = ({ children, className, outline, variants }) => {
 
     return (
-        <button className={`${variant ? style.outline : style.primary} ${className}`}>
-           {icon}
-        </button>
+        <motion.button
+            variants={variants}
+            className={`${outline ? style.outline : style.primary} ${className}`}>
+            {children}
+        </motion.button>
     )
 }
 

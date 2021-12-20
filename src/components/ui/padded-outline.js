@@ -1,11 +1,12 @@
 import style from "./padded-outline.module.css"
+import { motion } from 'framer-motion';
 
-const PaddedOutline = ({ children, className }) => {
+const PaddedOutline = ({ variants, children, className = "" }) => {
 
     return (
-        <div className={`${className || ''} ${style.outline}`}>
+        <motion.div variants={variants} className={`${className} ${style.outline}`}>
             {children}
-        </div>
+        </motion.div>
     )
 }
 

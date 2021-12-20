@@ -26,3 +26,12 @@
   border-top-right-radius: 0.3rem;
   border-bottom-right-radius: 0.3rem;
 }
+
+.caretLeft{
+  position: absolute;
+  left: -10px
+}
+.caretRight{
+  position: absolute;
+  right: -10px
+}

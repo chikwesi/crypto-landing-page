@@ -6,8 +6,9 @@
   width: 45px;
   height: 45px;
   border-radius: 100px;
-  text-align: center;
-  vertical-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid transparent;
   font-weight: bolder;
   font-size: 1.2rem;

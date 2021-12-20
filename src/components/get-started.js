@@ -1,6 +1,5 @@
 
 import { Col, Row } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
 import style from './get-started.module.css';
 import Banner from './layout/banner';
 import Frame from './layout/frame';
@@ -45,7 +44,8 @@ const hideAndShowVariant = {
         opacity: 1,
         transition: {
             ease: "easeIn",
-            duration: 0.5,
+            duration: 0.3,
+            when: "beforeChildren",
         },
     },
 };
@@ -117,6 +117,7 @@ const GetStarted = () => {
                                 variants={container}
                                 initial='hidden'
                                 whileInView='show'
+                                viewport={{ once: true }}
                                 className={`row flex-wrap flex-column justify-content-center gy-4 p-4 ${style.height}`}>
                                 {
                                     STEPS.map((step, i) =>

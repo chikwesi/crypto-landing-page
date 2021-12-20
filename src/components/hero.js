@@ -6,21 +6,34 @@ import style from './hero.module.css';
 import Trades from './trades';
 import { motion } from 'framer-motion';
 
+
+
+const wrapper = {
+    hidden: {
+        height: '1300px'
+    },
+    show: {
+        height: '800px',
+        transition: {
+            ease: "easeIn",
+            duration: 0.5,
+            when: "beforeChildren",
+        },
+    },
+}
+
 const container = {
     show: {
         transition: {
             when: "afterChildren",
-            staggerChildren: .35,
+            staggerChildren: .65,
         },
     },
 }
+
 const item = {
     hidden: {
         opacity: 0, y: -50,
-        transition: {
-            ease: "easeIn",
-            duration: 0.7,
-        },
     },
     show: {
         opacity: 1,
@@ -31,16 +44,32 @@ const item = {
         },
     },
 };
+const tradeVariant = {
+    hidden: {
+        opacity: 0,
+    },
+    show: {
+        opacity: 1,
+        transition: {
+            ease: "easeIn",
+            duration: 0.7,
+            delay: 2
+        },
+    },
+};
+
 const Hero = () => {
     return (
-        <Container fluid className={style.hero}>
+        <motion.div variants={wrapper}
+            className={`${style.hero} container-fluid`}
+
+            initial='hidden'
+            animate='show'>
             <Header></Header>
             <motion.div
                 className="text-center d-flex align-items-center flex-column justify-content-center h-100"
                 variants={container}
-                initial='hidden'
-                animate='show'
-                exit='exit'>
+            >
                 <motion.h1 variants={item} className={style.title}>
                     Don't Just Hold, <span className="fw-bolder">Earn.</span>
                 </motion.h1>
@@ -55,8 +84,12 @@ const Hero = () => {
                     </Button>
                 </motion.a>
             </motion.div>
-            <Trades></Trades>
-        </Container>
+            <motion.div variants={tradeVariant}
+                initial='hidden'
+                animate='show'>
+                <Trades ></Trades>
+            </motion.div>
+        </motion.div>
     )
 }
 

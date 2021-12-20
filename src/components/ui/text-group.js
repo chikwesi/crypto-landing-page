@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const container = {
     show: {
         transition: {
-            when: "afterChildren",
+            when: "beforeChildren",
             staggerChildren: .25,
         },
     },

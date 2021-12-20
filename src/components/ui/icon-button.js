@@ -1,5 +1,4 @@
 import { Button } from 'react-bootstrap';
-import style from './icon-button.module.css'
 
 const IconButton = ({ children, className = '' }) => {
 

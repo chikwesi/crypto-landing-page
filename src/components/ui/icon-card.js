@@ -19,7 +19,7 @@ const item = {
         y: 0,
         transition: {
             ease: "easeIn",
-            duration: 0.7,
+            duration: 0.5,
         },
     },
 };

@@ -7,7 +7,7 @@ import GetStarted from './components/get-started';
 import Security from './components/security';
 import Testimonial from './components/testimonial';
 import CallToAction from './components/call-to-action';
-import Partners from './components/patnership';
+import Partners from './components/partnership';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <GetStarted />
       <Security />
       <Testimonial />
-      <Partners />
+      {/* <Partners /> */}
       <CallToAction />
       <Footer />
     </div>

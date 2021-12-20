@@ -2,6 +2,8 @@
 import { Col, Row } from 'react-bootstrap';
 import TradingCard from './ui/trading-card';
 import style from './trades.module.css';
+import IconButtonRound from './ui/icon-button-round';
+import Caret from './ui/caret';
 
 
 const trades = [
@@ -38,20 +40,26 @@ const trades = [
 const Trades = () => {
     return (
         <Row className="justify-content-center">
-        <Col md={8}>
-            <Row className={`gx-0 ${style.trades}`}>
-                {
-                    trades.map(trade =>
-                        <Col md={3}>
-                            <div className={style.tradeCard}> 
-                                <TradingCard {...trade} />
-                            </div>
-                        </Col>
-                    )
-                }
-            </Row>
-        </Col>
-    </Row>
+            <Col md={8} className="position-relative d-flex align-items-center">
+                <IconButtonRound outline className={style.caretLeft}>
+                    <Caret angle="left" />
+                </IconButtonRound>
+                <Row className={`gx-0 ${style.trades} w-100`}>
+                    {
+                        trades.map(trade =>
+                            <Col md={3}>
+                                <div className={style.tradeCard}>
+                                    <TradingCard {...trade} />
+                                </div>
+                            </Col>
+                        )
+                    }
+                </Row>
+                <IconButtonRound outline className={style.caretRight}>
+                    <Caret angle="right" />
+                </IconButtonRound>
+            </Col>
+        </Row>
 
     )
 }
