@@ -112,7 +112,7 @@ const GetStarted = () => {
                             <IconButton className="mt-auto">Get Started</IconButton>
 
                         </Col>
-                        <Col>
+                        <Col md={7}>
                             <motion.div
                                 variants={container}
                                 initial='hidden'
