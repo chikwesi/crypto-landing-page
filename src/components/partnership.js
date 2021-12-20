@@ -1,5 +1,4 @@
 import { Container } from "react-bootstrap";
-import Frame from "./layout/frame";
 import style from "./partnership.module.css"
 import { motion } from 'framer-motion';
 

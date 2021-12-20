@@ -1,12 +1,8 @@
-
-import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Header from './header';
 import style from './hero.module.css';
 import Trades from './trades';
 import { motion } from 'framer-motion';
-
-
 
 const wrapper = {
     hidden: {
