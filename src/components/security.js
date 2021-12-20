@@ -1,4 +1,3 @@
-
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import Frame from './layout/frame';
 import style from './security.module.css';

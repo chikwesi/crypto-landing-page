@@ -28,7 +28,8 @@ const Header = () => {
                     </Row>
                 </Col>
                 <Col md='auto' className="ms-auto">
-                    <Button variant='link' size="lg">
+                    <Button variant='link' className="text-white text-decoration-none d-inline-flex align-items-center" size="lg">
+                        <img  className="me-2" src="./keyhole.png" width="20px" alt="keyhole"/>
                         Login
                     </Button>
                     <Button variant='outline-secondary' size='lg'>

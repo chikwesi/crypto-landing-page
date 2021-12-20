@@ -1,5 +1,5 @@
 
-import { Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Header from './header';
 import style from './hero.module.css';

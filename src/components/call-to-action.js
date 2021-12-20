@@ -1,6 +1,5 @@
 
 import Button from 'react-bootstrap/Button';
-import style from './hero.module.css';
 import Banner from './layout/banner';
 import Frame from './layout/frame';
 import TextGroup from './ui/text-group';

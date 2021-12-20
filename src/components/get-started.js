@@ -1,5 +1,5 @@
 
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import style from './get-started.module.css';
 import Banner from './layout/banner';

@@ -13,3 +13,9 @@
   position: relative;
   top: -10px;
 }
+
+.btn-outline-secondary, .btn-outline-secondary:hover{
+  background-color: #ffffff0a !important;
+  color: #6c757d !important;
+  border-color: #6c757d !important;
+}
