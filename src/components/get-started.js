@@ -9,7 +9,7 @@ import { motion } from 'framer-motion';
 import IconButton from './ui/icon-button';
 
 const TEXT_DATA = {
-    title: <>Start Earning*<br/>in 5 Simple steps </>,
+    title: <>Start Earning*<br />in 5 Simple steps </>,
     subTitle: "*Not Just Saving"
 }
 
@@ -109,7 +109,9 @@ const GetStarted = () => {
                                     className="text-left"
                                 />
                             </motion.div >
-                            <IconButton className="mt-auto">Get Started</IconButton>
+                            <motion.a variants={textVariant} className="mt-auto">
+                                <IconButton >Get Started</IconButton>
+                            </motion.a>
 
                         </Col>
                         <Col md={7}>
