@@ -68,6 +68,38 @@ const reflection = {
     },
 };
 
+const caretL = {
+    hidden: {
+        opacity: 0, x: -80
+    },
+    show: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            ease: "easeIn",
+            duration: 0.4,
+        },
+    },
+};
+const caretR = {
+    hidden: {
+        opacity: 0, x: 80
+    },
+    show: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            ease: "easeIn",
+            duration: 0.4,
+        },
+    },
+};
+const caretContainer = {
+    show: {
+    },
+}
+
+
 const Testimonial = () => {
     return (
         <Frame className={style.bg}>
@@ -114,14 +146,17 @@ const Testimonial = () => {
                     </motion.div>
                 </Row>
                 <Row className="py-4 justify-content-center">
-                    <Col md="auto">
-                        <IconButtonRound outline className='me-3'>
+                    <motion.div className="col-md-auto d-flex"
+                          variants={caretContainer}
+                          initial='hidden'
+                          whileInView='show'>
+                        <IconButtonRound variants={caretR} outline className='me-3'>
                             <Caret angle="left" />
                         </IconButtonRound>
-                        <IconButtonRound className='me-3'>
+                        <IconButtonRound variants={caretL} className='me-3'>
                             <Caret angle="right" />
                         </IconButtonRound>
-                    </Col>
+                    </motion.div>
                 </Row>
             </Container>
         </Frame>
