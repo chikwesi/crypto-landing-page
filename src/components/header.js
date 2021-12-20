@@ -32,7 +32,7 @@ const item = {
         opacity: 1,
         transition: {
             ease: "easeIn",
-            duration: 0.3,
+            duration: 0.7,
         },
     },
 };
