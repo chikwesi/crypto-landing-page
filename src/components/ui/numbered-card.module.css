@@ -4,7 +4,6 @@
   padding: 1.2rem;
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 .badge {
   color: #eb451c;
@@ -18,7 +17,4 @@
   background-color: #702a23;
   margin-bottom: -1rem ;
   font-weight: bolder;
-  position: absolute;
-  right: 10;
-  top: 10;
 }
